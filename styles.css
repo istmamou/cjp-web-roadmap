@@ -1,6 +1,7 @@
-/* .techno {
-   
-} */
+pre {
+    display: inline !important;
+    white-space: pre-wrap !important;
+}
 
 .technos {
     display: grid;
