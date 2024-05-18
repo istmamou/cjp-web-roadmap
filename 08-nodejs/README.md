@@ -16,10 +16,4 @@ Nous aurons ainsi la possibilité d'écrire nos scripts et les faire interpréte
 
 ### Cas pratique: un serveur web
 
-Nous allons mettre en pratique ces notions en créant un serveur web simple qui affiche un page HTML de base.
-
-1. Création d'un dossier
-1. Configurer une première route
-1. Tester
-1. Itérer
-
+Nous allons mettre en pratique ces notions en créant un serveur web simple qui héberge une API de gestion des utilisateurs. Mais avant expliquons les [notions sur les APIs](../09-rest-api/).

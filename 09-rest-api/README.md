@@ -60,8 +60,8 @@ PUT /utilisateurs/123
 {
   "nom": "Jane Doe",
   "email": "jane.doe@example.com"
-```
 }
+```
 
 * Supprimer un utilisateur :
 

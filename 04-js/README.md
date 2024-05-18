@@ -2,7 +2,7 @@
 
 Le JavaScript est un langage de programmation qui permet de rendre des pages Web dynamiques. Ce dynamisme se manifeste très souvent par des comportements programmables qui permettent à la page Web de se comporter différemment lorsque telle ou telle autre chose survient.
 
-L'exemple le plus simple que l'on va faire sera de créer une page dont l'arrière plan change à chaque clique.
+L'exemple le plus simple que l'on va faire sera de créer une page dont l'arrière plan change à chaque clic.
 
 Premièrement examinons les différents briques de bases pour pouvoir construire un tel programme.
 
@@ -15,7 +15,7 @@ Tout d'abord, les outils nécessaires:
 
 ### Les variables
 
-Une variable sert à stocker une valeur utilise pour le programme lors de son fonctionnement.
+Une variable sert à stocker une valeur utile pour le programme lors de son fonctionnement.
 
 Pour créer une variable, nous utilisons le mot clé `let`.
 
@@ -69,7 +69,7 @@ Les **conditions** permettent de controller le flow de notre programme, alors il
 
 Les opérateurs de comparation et aussi logiques permettent d'exprimer les conditions.
 
-Les **boucles** permettent donc de repéter des actions. Un groupe d'instructions.
+Les **boucles** permettent quant à elles de repéter des actions, ou alors un bloc d'instructions.
 
 **Exemple**
 
