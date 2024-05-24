@@ -1,0 +1,492 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../05-git-github/" />
+    
+    
+    <link rel="prev" href="../03-css/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-web-essentials/">
+            
+                <a href="../01-web-essentials/">
+            
+                    
+                    Web Essentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-html/">
+            
+                <a href="../02-html/">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03-css/">
+            
+                <a href="../03-css/">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-git-github/">
+            
+                <a href="../05-git-github/">
+            
+                    
+                    Git / GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-hosting/">
+            
+                <a href="../06-hosting/">
+            
+                    
+                    Hosting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07-reactjs/">
+            
+                <a href="../07-reactjs/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08-nodejs/">
+            
+                <a href="../08-nodejs/">
+            
+                    
+                    Nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09-rest-api/">
+            
+                <a href="../09-rest-api/">
+            
+                    
+                    API REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JavaScript</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="js">JS</h1>
+<p>Le JavaScript est un langage de programmation qui permet de rendre des pages Web dynamiques. Ce dynamisme se manifeste très souvent par des comportements programmables qui permettent à la page Web de se comporter différemment lorsque telle ou telle autre chose survient.</p>
+<p>L&apos;exemple le plus simple que l&apos;on va faire sera de créer une page dont l&apos;arrière plan change à chaque clic.</p>
+<p>Premièrement examinons les différents briques de bases pour pouvoir construire un tel programme.</p>
+<p>Tout d&apos;abord, les outils nécessaires:</p>
+<ul>
+<li>Un <strong>éditeur</strong> pour écrire notre code source</li>
+<li>Un <strong>navigateur</strong> pour interpréter (afficher)</li>
+</ul>
+<h2 id="les-bases-du-js">Les bases du JS</h2>
+<h3 id="les-variables">Les variables</h3>
+<p>Une variable sert à stocker une valeur utile pour le programme lors de son fonctionnement.</p>
+<p>Pour créer une variable, nous utilisons le mot clé <code>let</code>.</p>
+<p>Il existe plusieurs type de données:</p>
+<ul>
+<li>Numérique</li>
+<li>Booléen</li>
+<li>String</li>
+<li>Object</li>
+<li>Array</li>
+</ul>
+<p>Pour résumer, retenons ceux-là ! Ils feront le taff presque 90% du temps.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> sentence = <span class="hljs-string">&quot;Bienvenue au FODR&quot;</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(sentence)
+
+<span class="hljs-keyword">let</span> name = <span class="hljs-string">&quot;Moustapha&quot;</span>
+<span class="hljs-keyword">let</span> age = <span class="hljs-number">10</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(name, <span class="hljs-string">&quot;a&quot;</span>, age, <span class="hljs-string">&quot;ans&quot;</span>)
+
+<span class="hljs-keyword">let</span> values = [<span class="hljs-number">12</span>, <span class="hljs-number">45</span>, <span class="hljs-number">89</span>]
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(values[<span class="hljs-number">0</span>])
+
+<span class="hljs-keyword">let</span> person = {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;Moustapha&apos;</span>,
+    <span class="hljs-attr">city</span>: <span class="hljs-string">&apos;Mamou&apos;</span>,
+    <span class="hljs-attr">dob</span>: <span class="hljs-string">&apos;1999-05-17&apos;</span>,
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-property">age</span>)
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person[<span class="hljs-string">&apos;city&apos;</span>])
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-property">dob</span>)
+</code></pre>
+<p>Alors, la console est certes un endroit où l&apos;on peut expérimenter, mais ce n&apos;est pas adapté pour écrire des script.</p>
+<p>Alors, nous allons résoudre notre premier projet, changer dynamiquement l&apos;arrière plan.</p>
+<p><strong>Source Code:</strong> <a href="ColorGenerator.html">Random Color Generator</a></p>
+<h3 id="conditions--boucles">Conditions &amp; Boucles</h3>
+<p>Lorsque vous programmez en JS, il arrive très souvent de vouloir automatiser des tâches, répéter et controller le flux d&apos;exécution.</p>
+<p>Les <strong>conditions</strong> permettent de controller le flow de notre programme, alors il existe principalement trois façons:</p>
+<ul>
+<li><code>if else</code></li>
+<li><code>switch</code></li>
+<li><code>ternary</code></li>
+</ul>
+<p>Les opérateurs de comparation et aussi logiques permettent d&apos;exprimer les conditions.</p>
+<p>Les <strong>boucles</strong> permettent quant à elles de repéter des actions, ou alors un bloc d&apos;instructions.</p>
+<p><strong>Exemple</strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">// prenons une liste de personnes:</span>
+<span class="hljs-keyword">const</span> persons = [
+    {
+        <span class="hljs-attr">nom</span>: <span class="hljs-string">&apos;Moustapha&apos;</span>,
+        <span class="hljs-attr">dob</span>: <span class="hljs-string">&apos;12-12-1999&apos;</span>,
+    },
+    {
+        <span class="hljs-attr">nom</span>: <span class="hljs-string">&apos;Oury&apos;</span>,
+        <span class="hljs-attr">dob</span>: <span class="hljs-string">&apos;12-05-2000&apos;</span>,
+    },
+    {
+        <span class="hljs-attr">nom</span>: <span class="hljs-string">&apos;Aïssatou&apos;</span>,
+        <span class="hljs-attr">dob</span>: <span class="hljs-string">&apos;05-20-2001&apos;</span>,
+    },
+    {
+        <span class="hljs-attr">nom</span>: <span class="hljs-string">&apos;Moustapha&apos;</span>,
+        <span class="hljs-attr">dob</span>: <span class="hljs-string">&apos;17-07-2000&apos;</span>,
+    },
+]
+
+<span class="hljs-comment">// Liste de tous le monde</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; persons.<span class="hljs-property">length</span>; i++)
+{
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${i + <span class="hljs-number">1</span>}</span>: <span class="hljs-subst">${persons[i].nom}</span> (<span class="hljs-subst">${persons[i].dob}</span>)`</span>)
+}
+
+<span class="hljs-comment">// Liste des personnes nées à partir de 2000</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; persons.<span class="hljs-property">length</span>; i++)
+{
+    <span class="hljs-keyword">if</span>(persons[i].<span class="hljs-property">dob</span> &gt;= <span class="hljs-string">&apos;01/01/2000&apos;</span>)
+    {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${i + <span class="hljs-number">1</span>}</span>: <span class="hljs-subst">${persons[i].nom}</span> (<span class="hljs-subst">${persons[i].dob}</span>)`</span>)
+    }
+}
+</code></pre>
+<p>Maintenant essayons de réaliser un petit programme qui va simuler une roulette.</p>
+<p>Code Source: <a href="roulette.html">TP Roulette</a></p>
+<h2 id="browser-apis">Browser APIs</h2>
+<p>Les navigateurs de nos jours embarquent des pour la plupart des API qui permettent d&apos;effectuer des opérations beaucoup plus complexes qu&apos;il aurait été impossible ou bien très difficile les années précédentes.</p>
+<ul>
+<li>DOM</li>
+<li>Canva &amp; WebGL</li>
+<li>Storage</li>
+<li>Géolocalisatin</li>
+<li>Fetch</li>
+<li>etc.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../03-css/" class="navigation navigation-prev " aria-label="Previous page: CSS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../05-git-github/" class="navigation navigation-next " aria-label="Next page: Git / GitHub">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JavaScript","level":"1.5","depth":1,"next":{"title":"Git / GitHub","level":"1.6","depth":1,"path":"chapters/05-git-github/README.md","ref":"./chapters/05-git-github/README.md","articles":[]},"previous":{"title":"CSS","level":"1.4","depth":1,"path":"chapters/03-css/README.md","ref":"./chapters/03-css/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"./cours","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapters/04-js/README.md","mtime":"2024-05-18T10:48:35.807Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-05-24T03:06:42.334Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <title>Random Color Generator</title>
+        <style>
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                user-select: none;
+            }
+            button 
+            {
+                cursor: pointer;
+                border-radius: 1em;
+                width: 500px;
+                font-size: 7em;
+                border: none;
+                margin:auto;
+                background-color: hsl(36, 100%, 50%);
+            }
+
+            button:hover{                
+                background-color: rgb(211, 133, 15);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button>Click Me</button>
+        </div>
+
+
+        <script>
+            let button = document.querySelector('button');
+            button.addEventListener('click', function() {
+                console.log(button)
+                const color = `hsla(${(Math.random() * 50) % 360}, 50%, 50%, 0.7)`;
+                document.querySelector('body').style.backgroundColor = color;
+            });
+        </script>
+    </body>
+
+    
+</html>

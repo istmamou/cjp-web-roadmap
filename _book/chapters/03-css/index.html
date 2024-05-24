@@ -1,0 +1,644 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../04-js/" />
+    
+    
+    <link rel="prev" href="../02-html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-web-essentials/">
+            
+                <a href="../01-web-essentials/">
+            
+                    
+                    Web Essentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-html/">
+            
+                <a href="../02-html/">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-js/">
+            
+                <a href="../04-js/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-git-github/">
+            
+                <a href="../05-git-github/">
+            
+                    
+                    Git / GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-hosting/">
+            
+                <a href="../06-hosting/">
+            
+                    
+                    Hosting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07-reactjs/">
+            
+                <a href="../07-reactjs/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08-nodejs/">
+            
+                <a href="../08-nodejs/">
+            
+                    
+                    Nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09-rest-api/">
+            
+                <a href="../09-rest-api/">
+            
+                    
+                    API REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >CSS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="css">CSS</h1>
+<p>Alors, c&apos;est bien curieux ! Mais voilà, ils ont créé le langage <strong>CSS</strong>. Qui permet de créer des feuilles de styles qu&apos;on peut appliquer à notre squelette HTML afin de lui donner vie, de la forme, et des couleurs.</p>
+<p>Il s&apos;agit du <strong>World Wide Web Consortium</strong> (W3C) qui a la responsabilité de tout ce qui est spécification Web.</p>
+<p>Le langage CSS nous permet donc de donner des styles à notre contenu HTML.</p>
+<p>Nous allons y aller petit à petit pour découvrir les propriétés de styles fondamentales. Mais avant, il est important de pouvoir:</p>
+<ul>
+<li>Lier deux fichiers HTML et CSS.</li>
+<li>Comprendre les sélecteurs.</li>
+</ul>
+<h3 id="liaison-des-fichiers">Liaison des fichiers</h3>
+<p>Dans notre HTML, on peut indiquer quels fichier de style s&apos;appliquent à notre page.</p>
+<p>Pour cela, on utilise la balise <code>link</code> placée dans l&apos;élément <code>head</code> de la page.</p>
+<pre><code class="lang-diff">    &lt;!doctype&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Le langage CSS&lt;/title&gt;
+            &lt;meta charset=&quot;utf-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+<span class="hljs-addition">+           &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; &gt;</span>
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Apprenons les styles en CSS&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>Enregistrons le contenu et puis finalement, dans le même dossier que notre fichier HTML, on crée un fichier <code>styles.css</code>.</p>
+<h3 id="notions-de-sélecteurs">Notions de sélecteurs</h3>
+<p>Maintenant que nous pensons que les fichiers HTML et CSS sont reliés, vérifions en appliquant notre premier style.</p>
+<p>Dans le fichier CSS, on ajoute ce bout de code:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+}
+</code></pre>
+<p>Enregistrons le fichier CSS et puis on va ouvrir le fichier HTML dans le navigateur.</p>
+<p>Si tout est bien fait, on devrait avoir une nouvelle couleur à l&apos;arrière plan: le <strong>vert</strong>.</p>
+<p>Voilà, on vient comme ça d&apos;écrire notre premier code CSS.</p>
+<blockquote>
+<p><strong>Note :</strong> Il est inutile d&apos;ouvrir le fichier CSS dans le navigateur. Nous avons créé le fichier HTML et nous avons ajouté une ligne pour le relier au code CSS. Du coup, il va importer les styles qui sont dans le fichier CSS pour se les appliquer.</p>
+</blockquote>
+<p>Expliquons brièvement le code qu&apos;on a écrit tout de suite.</p>
+<p>En CSS, on a les sélecteurs, les propriétés et les valeurs; c&apos;est tout !</p>
+<pre><code class="lang-mermaid">flowchart
+A[body] --- B[Sélecteur]
+C[background-color] --- D[Propriété]
+E[green] --- F[Valeur]
+</code></pre>
+<p>On va s&apos;intéresser aux sélecteurs, il en existe plusieurs, mais on verra quelques uns seulement.</p>
+<ul>
+<li><p>Sélecteurs d&apos;éléments comme <code>body</code>, <code>p</code>, <code>div</code>, <code>ul</code>, etc. On prend juste le nom de l&apos;élement que l&apos;on cible. Les propriétés seront appliqués à tous les éléments de la page qui sont de même type. Par exemple</p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">p</span>{
+      <span class="hljs-attribute">color</span>: red;
+  }
+</code></pre>
+<p>  va colorier tous les paragraphes du document en rouge.</p>
+</li>
+<li><p>Les sélecteurs de classe.</p>
+<p>  En HTML, on peut créer des éléments en leur ajoutant un attribut <code>class</code>.</p>
+<pre><code class="lang-html">      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Les sélécteurs<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight&quot;</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Dolor sit<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight&quot;</span>&gt;</span>Amet consectetur<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<p>  Grâce à cet attribut, on pourra les cibler en CSS, comme suit:</p>
+<pre><code class="lang-css">  <span class="hljs-selector-class">.highlight</span> {
+      <span class="hljs-attribute">color</span>: red;
+      <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  }
+</code></pre>
+<p>  Voilà !</p>
+<p>  On peut même :</p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">p</span><span class="hljs-selector-class">.highlight</span> {
+      <span class="hljs-attribute">color</span>: red;
+      <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  }
+</code></pre>
+<p>  pour dire qu&apos;on ne s&apos;intéresse qu&apos;aux paragraphes qui ont la classe <code>highlight</code></p>
+<p>   </p>
+<blockquote>
+<p><strong>Note:</strong> Remarquez que la classe est collée au nom de l&apos;élément.</p>
+</blockquote>
+<p>  Si on veut styliser le paragraphe qui n&apos;a pas la classe <code>highlight</code>, cibler juste avec <code>p</code> ne sera pas suffisant.</p>
+<p>  Pour ce faire, on peut:</p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-class">.highlight</span>) {
+      <span class="hljs-attribute">color</span>: red;
+      <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  }
+</code></pre>
+</li>
+<li><p>Les sélecteurs d&apos;identifiant !<br>  Si on ajoute un attribut <code>id</code> à notre élément, alors on peut le cibler en CSS avec <code>#&lt;nom-identifiant&gt;</code>.</p>
+<p>  Par exemple:</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Les sélécteurs<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Dolor sit<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;second&quot;</span>&gt;</span>Amet consectetur<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css">  <span class="hljs-selector-id">#second</span> {
+      <span class="hljs-attribute">color</span>: red;
+      <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  }
+</code></pre>
+<blockquote>
+<p><strong>Note :</strong> Un identifiant est unique par page HTML.</p>
+</blockquote>
+</li>
+</ul>
+<p>Et ainsi de suite, il y en a plein d&apos;autres sélecteurs comme :</p>
+<ul>
+<li><p>Sélecteur universel : </p>
+<pre><code class="lang-css">  <span class="hljs-comment">/* Pour cibler tous les éléments de la page, quels qu&apos;ils soient */</span>
+  * {
+      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  }
+</code></pre>
+</li>
+<li><p>Sélecteur de descendants: </p>
+<pre><code class="lang-css">  <span class="hljs-comment">/* Pour cibler toutes les cellules d&apos;un tableau */</span>
+  <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">td</span> {
+      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+  }
+</code></pre>
+</li>
+<li><p>Sélecteurs d&apos;enfants directs:</p>
+<pre><code class="lang-css">  <span class="hljs-comment">/* Pour cibler tous les paragraphes qui sont des enfants directs d&apos;une div */</span>
+  <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">p</span> {
+      <span class="hljs-attribute">text-align</span>: center;
+  }
+</code></pre>
+</li>
+<li><p>Sélecteurs de voisins</p>
+<pre><code class="lang-css">  <span class="hljs-comment">/* Pour cibler tous les paragraphes qui sont positionnés après des h2 */</span>
+  <span class="hljs-selector-tag">h2</span> + <span class="hljs-selector-tag">p</span> {
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
+      <span class="hljs-attribute">border-top</span>: <span class="hljs-number">2px</span> dashed gray;
+  }
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note :</strong> On peut grouper les sélecteurs en les séparant par une virgule.</p>
+</blockquote>
+<h3 id="valeurs-spéciales">Valeurs spéciales</h3>
+<p>En CSS, il serait intéressant qu&apos;on révise un peu quelques valeurs intéressantes:</p>
+<ul>
+<li>Les mesures</li>
+<li>Les couleurs</li>
+</ul>
+<h4 id="les-mesures">Les mesures</h4>
+<p>Pour le cas des <strong>mesures</strong>, nous avons plusieurs unités telles que:</p>
+<ol>
+<li>Les unités statiques<ul>
+<li><strong>pixel</strong> (<code>px</code>)</li>
+<li><strong>centimètre</strong> (<code>cm</code>)</li>
+<li><strong>inch</strong> (<code>in</code>)</li>
+</ul>
+</li>
+<li>Les unités relatives<ul>
+<li><strong>pourcentage</strong> (<code>%</code>)</li>
+<li><strong>em</strong> (relatif à la taille de police de l&apos;élement parent.)</li>
+<li><strong>rem</strong> (relatif à la taille de police de l&apos;élement <code>:root</code> ou <code>body</code>)</li>
+<li><strong>vh</strong> (relatif à hauteur du viewport)</li>
+<li><strong>vw</strong> (relatif à la largeur du viewport)</li>
+</ul>
+</li>
+</ol>
+<p>Cependant pour le cadre de ce cours, on se contentera de trois unités: <code>px</code>, <code>rem</code> et <code>em</code>.</p>
+<h4 id="les-couleurs">Les couleurs</h4>
+<p>Pour ce qui est des couleurs, il existe plusieurs façon de les exprimer également.</p>
+<blockquote>
+<p>Basiquement, on peut obtenir n&apos;importe quelle couleur en additionnant des couleurs fondamentales : <code>rouge</code>, <code>bleu</code> et <code>vert</code>.</p>
+</blockquote>
+<p>On va retenir trois façons pour donner une couleur (mais il en existe d&apos;autres.)</p>
+<ul>
+<li>A partir de son nom
+  Oui, des nom comme <code>blue</code>, <code>black</code>, <code>white</code>, <code>red</code>, <code>yellow</code>, <code>green</code>, <code>teal</code>, <code>purple</code>, <code>gray</code>, <code>turquoise</code>, <code>pink</code>, <code>violet</code>, etc. Une liste non exhaustive se trouve sur <a href="https://www.w3schools.com/cssref/css_colors.php" target="_blank">cette page</a>.</li>
+<li><p>A partir de son <strong>code rgb</strong>
+  Pour le code <strong>RGB</strong>, il suffit de connaitre les variation de <code>rouge</code>, <code>bleu</code> et <code>vert</code> de la couleur pour obtenir la couleur que l&apos;on veut. La quantité minimale pour chaque variation est <strong>0</strong> tandis que la quantité maximale est <strong>255</strong>.</p>
+<p>  On va prendre quelques exemples</p>
+<p>  |Couleur|Code RGB|
+  |-|-|
+  |Noir|<code>rgb(0, 0, 0)</code>|
+  |Blanc|<code>rgb(255, 255, 255)</code>|
+  |Bleu|<code>rgb(0, 0, 255)</code>|
+  |Rouge|<code>rgb(255, 0, 0)</code>|
+  |Vert|<code>rgb(0, 255, 0)</code>|
+  |Jaune|<code>rgb(255, 255, 0)</code>|</p>
+</li>
+<li><p>A partir de son <strong>code hexadécimal</strong>
+  Finalement, il suffit de prendre la correspondance hexadécimale de chaque quantité du code <strong>RGB</strong> pour former une couleur en mode hexa. On va reprendre le tableau précédent.</p>
+<p>  |Couleur|Code Hexa|
+  |-|-|
+  |Noir|<code>#000000</code>|
+  |Blanc|<code>#FFFFFF</code>|
+  |Bleu|<code>#0000FF</code>|
+  |Rouge|<code>#FF0000</code>|
+  |Vert|<code>#00FF00</code>|
+  |Jaune|<code>#FFFF00</code>|</p>
+</li>
+</ul>
+<pre><code>&gt; Note: Pour les valeurs **hexa**, naturellement, la quantité minimale est **00** tandis que la quantité maximale est **FF**.
+</code></pre><h3 id="texte-mielleux">Texte mielleux</h3>
+<p>Après cet apparté sur les sélecteurs, les valeurs particulières, nous allons nous intéresser à comment on va enrichir notre texte. Pour cela, nous aborderons nombre de propriétés ayant trait au texte.</p>
+<table>
+<thead>
+<tr>
+<th>Propriété</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>font-family</code></td>
+<td>Pour changer la police d&apos;écriture</td>
+</tr>
+<tr>
+<td><code>font-weight</code></td>
+<td>Pour mettre le poids de la police (gras)</td>
+</tr>
+<tr>
+<td><code>font-size</code></td>
+<td>Modifier la taille de police</td>
+</tr>
+<tr>
+<td><code>text-align</code></td>
+<td>Changer l&apos;allignement du texte</td>
+</tr>
+<tr>
+<td><code>text-decoration</code></td>
+<td>Pour la décoration du texte (soulignement)</td>
+</tr>
+<tr>
+<td><code>text-transform</code></td>
+<td>Changer la casse (majuscule, minuscule)</td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td>Pourla couleur de texte</td>
+</tr>
+</tbody>
+</table>
+<h3 id="système-de-boites">Système de boites</h3>
+<p>En HTML, tout est une boite. Mais on classe les éléments en deux: <strong>inline</strong> et <strong>block</strong>.</p>
+<blockquote>
+<p><strong>Inline:</strong> Ceux qui s&apos;insèrent au flux et ne cause pas de décalage en occupant toute la largeur de l&apos;écran.</p>
+<p><strong>Block:</strong> Ceux qui s&apos;insèrent au flux et causent un décalage en occupant toute la largeur qu&apos;on leur attribue.</p>
+</blockquote>
+<p>Et y a certaines propriétés assez intéressantes pour les boîtes:</p>
+<ul>
+<li>Les bordures (<code>border</code>)</li>
+<li>Les marges internes (<code>padding</code>)</li>
+<li>Les marges externes (<code>margin</code>)</li>
+</ul>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../02-html/" class="navigation navigation-prev " aria-label="Previous page: HTML">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../04-js/" class="navigation navigation-next " aria-label="Next page: JavaScript">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.4","depth":1,"next":{"title":"JavaScript","level":"1.5","depth":1,"path":"chapters/04-js/README.md","ref":"./chapters/04-js/README.md","articles":[]},"previous":{"title":"HTML","level":"1.3","depth":1,"path":"chapters/02-html/README.md","ref":"./chapters/02-html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"./cours","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapters/03-css/README.md","mtime":"2024-05-13T00:22:59.537Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-05-24T03:06:42.334Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

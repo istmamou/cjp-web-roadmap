@@ -1,0 +1,437 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Essentials · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../02-html/" />
+    
+    
+    <link rel="prev" href="../../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Web Essentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-html/">
+            
+                <a href="../02-html/">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03-css/">
+            
+                <a href="../03-css/">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-js/">
+            
+                <a href="../04-js/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-git-github/">
+            
+                <a href="../05-git-github/">
+            
+                    
+                    Git / GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-hosting/">
+            
+                <a href="../06-hosting/">
+            
+                    
+                    Hosting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07-reactjs/">
+            
+                <a href="../07-reactjs/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08-nodejs/">
+            
+                <a href="../08-nodejs/">
+            
+                    
+                    Nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09-rest-api/">
+            
+                <a href="../09-rest-api/">
+            
+                    
+                    API REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Web Essentials</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="net-essentials">NET ESSENTIALS</h1>
+<p>Savez-vous en réalité ce qui se passe lorsque vous tapez sur la barre de recherche de votre navigateur l&apos;URL du site du Club des Jeunes Programmeurs <a href="https://club-jp.com" target="_blank">https://club-jp.com</a> ?</p>
+<p>Votre appareil est en train en coulisse de demander d&apos;afficher le contenu d&apos;une page web qui se trouve sur une machine distante.</p>
+<p>Tout d&apos;abord, cette phrase soulève des questionnements:</p>
+<ul>
+<li>Mon appareil demande d&apos;afficher ?</li>
+<li>Une page web ? Mais une page web c&apos;est quoi ?</li>
+<li>Une machine ? Elle est à qui cette machine ?</li>
+</ul>
+<p>Nous allons à travers les lignes qui suivent, expliquer dans les grandes lignes les principes de cette communication qui est au coeur même du web, et en général d&apos;Internet.</p>
+<h2 id="quoi-web-et-internet-cest-différent-">Quoi, Web et Internet c&apos;est différent ?</h2>
+<p>Oui !</p>
+<p>Le Web est un des nombreux services offerts par Internet. les autres services sont par exemple la messagerie email, le transfert de fichiers, etc.</p>
+<p>Internet par contre c&apos;est le réseau des réseaux. Littéralement cela signifie <strong>Interconnected Networks</strong>, sachant qu&apos;un <strong>réseau</strong> est une communication entretenue entre deux et plusieurs machines.</p>
+<p>Au coeur du Web, nous avons le <em>protocole</em> HTTP.</p>
+<p>Un <strong>protocole</strong> c&apos;est un ensemble de normes et de procédés qui permettent de réguler une communication.</p>
+<h2 id="que-dit-ce-protocole-">Que dit ce protocole ?</h2>
+<p>Le protocole HTTP est celui qui régit les communication sur le Web, à savoir, il s&apos;agit de l&apos;architecture Client / Serveur.</p>
+<p>Le <strong>client</strong> est le demandeur tandis que le <strong>serveur</strong> est la machine qui est interrogée.</p>
+<p><img src="images/image.png" alt="alt text"></p>
+<p>Les machines qui communiquent sur le web échangent des messages, qui peuvent être de deux nature: <strong>request</strong> ou bien <strong>response</strong>.</p>
+<p>Le client envoie une demande (request)
+<img src="images/image-1.png" alt="alt text"></p>
+<p>Tandis que le serveur réponds (response)
+<img src="images/image-2.png" alt="alt text"></p>
+<h2 id="lurl">L&apos;URL</h2>
+<p>Ce qui a rendu le Web intéressant et de facto l&apos;Internet n&apos;est rien d&apos;autre que les hyperliens que l&apos;on construit avec les URL.</p>
+<p>Les <strong>liens</strong> permettent de relier une page Web à une autre.</p>
+<p>Une <strong>URL</strong> (Uniform Resource Locator) par contre permet de localiser une resource ou bien du contenu (fichier) sur Internet.</p>
+<p><img src="images/image-3.png" alt="alt text"></p>
+<p>Voici quelques exemples:</p>
+<ul>
+<li><a href="https://club-jp.com/" target="_blank">https://club-jp.com/</a></li>
+<li><a href="https://univ-labe.edu.gn/" target="_blank">https://univ-labe.edu.gn/</a></li>
+<li><a href="https://univ-labe.edu.gn/wp-content/uploads/2024/03/125A4402-2048x1365.jpg" target="_blank">https://univ-labe.edu.gn/wp-content/uploads/2024/03/125A4402-2048x1365.jpg</a></li>
+</ul>
+<h2 id="client--serveur">Client / Serveur</h2>
+<p>Maintenant que nous savons cela, reprenons cette image au début:</p>
+<p><img src="images/image.png" alt="alt text"></p>
+<p>Vous devez retenir ceci:</p>
+<p>Lorsque vous décidez de lancer le site du Club des Jeunes Programmeurs, indirectement, votre appareil demande à une certaine machine sur laquelle le site est stoqué de charger cette page.</p>
+<p>La machine va donc répondre en envoyant le contenu de la page et puis votre appareil (ou particulièrement votre navigateur) va se charger de l&apos;interpréter et afficher le résultat.</p>
+<p>Voici donc décrit comment fonctionne le Web.</p>
+<p>Mais cependant une question réside, comment on met cela en place ?</p>
+<p>Eh bien, à travers cette série de formation, nous allons apprendre les technologies qui vont vous permettre d&apos;arriver à cet objectif.</p>
+<p>Plus spécifiquement, nous allons partager ensemble des techniques et technologies utilisées pour faire du développement web.</p>
+<p>Alors vous êtes chaud ?</p>
+<p>Rendez-vous dans le chapitre suivant où nous allons parler de la programmation web, et particulièrement du HTML et du CSS.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../02-html/" class="navigation navigation-next " aria-label="Next page: HTML">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Web Essentials","level":"1.2","depth":1,"next":{"title":"HTML","level":"1.3","depth":1,"path":"chapters/02-html/README.md","ref":"./chapters/02-html/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"./cours","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapters/01-web-essentials/README.md","mtime":"2024-05-13T00:16:11.700Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-05-24T03:06:42.334Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,5 +1,5 @@
 {
-  "name": "web-roadmap",
+  "name": "user-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "honkit": "^5.1.4",
-    "reveal.js": "^5.1.0"
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }

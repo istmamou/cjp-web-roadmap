@@ -1,0 +1,522 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../03-css/" />
+    
+    
+    <link rel="prev" href="../01-web-essentials/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-web-essentials/">
+            
+                <a href="../01-web-essentials/">
+            
+                    
+                    Web Essentials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03-css/">
+            
+                <a href="../03-css/">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-js/">
+            
+                <a href="../04-js/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-git-github/">
+            
+                <a href="../05-git-github/">
+            
+                    
+                    Git / GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-hosting/">
+            
+                <a href="../06-hosting/">
+            
+                    
+                    Hosting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../07-reactjs/">
+            
+                <a href="../07-reactjs/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../08-nodejs/">
+            
+                <a href="../08-nodejs/">
+            
+                    
+                    Nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../09-rest-api/">
+            
+                <a href="../09-rest-api/">
+            
+                    
+                    API REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >HTML</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html">HTML</h1>
+<p>Le HTML est un langage de <em>balisage</em> qui permet de définir la structure d&apos;un contenu.</p>
+<p>Un document HTML est ainsi une suite d&apos;<strong>éléments</strong> utilisé pour encadrer le contenu afin de les faire apparaître ou les faire se comporter d&apos;une certaine façon.</p>
+<p>Exemple Si nous prenons le contenu:</p>
+<pre><code class="lang-html">Quelle belle mélodie !
+</code></pre>
+<p>Si on veut que la ligne ait son propre paragraphe, on peut utiliser les <strong>balises</strong> qui correspondent: <code>&lt;p&gt;</code> pour encadrer le contenu:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Quelle belle mélodie !<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<h3 id="une-balise--un-élément-">Une balise ? Un élément ?</h3>
+<p>Oui, les balises sont utilisées pour donner de la <strong>valeur</strong> à un contenu, un <strong>sens</strong> en quelque sorte.</p>
+<h4 id="structure-dun-élément-html">Structure d&apos;un élément HTML</h4>
+<p>Reprenons le snippet de la section précédente.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Quelle belle mélodie !<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>On peut identitfier trois parties dans ce bout de code.</p>
+<pre><code class="lang-mermaid">flowchart
+    subgraph Element HTML
+        direction TB
+        A[&amp;lt;p&amp;gt;]
+        B[Quelle belle mélodie]
+        C[&amp;lt;/p&amp;gt;]
+
+        A --- 1[Balise ouvrante]
+        B --- 2[Contenu]
+        C --- 3[Balise ouvrante]
+        end
+        direction RL
+</code></pre>
+<p>Les éléments peuvent aussi parfois avoir des attributs comme ceci:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;note&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;com12&quot;</span>&gt;</span>Quelle belle mélodie !<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Un attribut contient des informations supplémentaires à propos de l&apos;élement mais qui ne sont pas affichées. <strong>class</strong> c&apos;est le nom de l&apos;attribut et <strong>note</strong> correspond à sa valeur.</p>
+<p>Certains attributs n&apos;ont pas de valeur, comme <strong>required</strong> (Formulaires).</p>
+<p>Suivez ces règles:</p>
+<ol>
+<li>Les attributs sont séparés par des espaces.</li>
+<li>La valeur est entre les guillemets doubles (<code>&apos;</code>) ou simples (<code>&apos;</code>)</li>
+</ol>
+<h4 id="imbrication-des-éléments">Imbrication des éléments</h4>
+<p>Il s&apos;agit du fait de placer un élément à l&apos;intérieur d&apos;un autre.</p>
+<p>Par exemble pour accentuer sur le mot <strong>belle</strong> du paragraphe précédent, on peut faire comme suit:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Quelle <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>belle<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> mélodie !<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Ce pendant, il faut observer la règle que le premier élément ouvert sera le dernier à être fermé. (LIFO)</p>
+<p>Utilisez ce diagramme pour comprendre:</p>
+<pre><code class="lang-mermaid">flowchart
+    p --- 1[Quelle]
+    p --- 2[strong]
+    2 --- 3[belle]
+    p --- 4[mélodie !]
+</code></pre>
+<h4 id="eléments-vides">Eléments vides</h4>
+<p>Il existe aussi des éléments vides.
+Par exemple pour insérer une image, la balise c&apos;est <code>img</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/firefox-icon.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Mon image de test&quot;</span>/&gt;</span>
+</code></pre>
+<h3 id="anatomie-dun-document-html">Anatomie d&apos;un document HTML</h3>
+<p>Cette théorie qu&apos;on vient de voir, s&apos;appliquera à l&apos;ensemble des éléments HTML. Cependant, sur page Web, on n&apos;aura pas qu&apos;un seul élément HTML. C&apos;est pourquoi, il est important d&apos;voir à quoi ressemble la structure d&apos;une page Web.</p>
+<p>Analysons le code suivant:</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Une page Web<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/renard.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;L&apos;image d&apos;un renard&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>On y trouve ce qui suit:</p>
+<pre><code class="lang-mermaid">flowchart
+    subgraph 1
+        A[doctype]
+        end
+    subgraph 2
+        direction TB
+        B[html]
+        B --&gt; C[head]
+        B --&gt; D[body]
+        C --&gt; E[title]
+        C --&gt; F[&quot;meta (charset)&quot;]
+        C --&gt; G[&quot;meta (viewport)&quot;]
+        D --&gt; H[q]
+        end
+</code></pre>
+<h2 id="la-suite-">La suite ?</h2>
+<p>Maintenant qu&apos;on a la base, approfondissons la notion de balises.</p>
+<p>Avec le langage HTML, on peut donner différentes valeurs à du texte. Commençons par le début, les <strong>titres</strong>.</p>
+<ul>
+<li><p>Les éléments <strong>titre</strong>
+  Permettent d&apos;indiquer qui sont les titres ou les sous-titres au sein de la page. Pour ce faire, on utilise les éléments <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>.</p>
+<p>  <em>h1</em> a plus de valeur que <em>h6</em>.</p>
+<p>  Si on prend exemple sur ce chapitre du cours jusqu&apos;à ce niveau, on aura:</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Apprendre les Fondamentaux du Web avec un projet guidé de A à Z<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Notions de base en HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Une balise ? Un élément ?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Structure d&apos;un élément HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>N&apos;utilisez pas les niveaux de titres pour la mise en forme. Vraiment !</p>
+</blockquote>
+</li>
+<li><p>Les paragraphes
+  Le texte dans un document HTML doit être wrappé dans un paragraphe. Il sert à baliser du texte qui se trouve sur la page Web.</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Voici un paragraphe simple<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Les listes 
+  On peut rencontrer dans le contenu d&apos;une page Web des liste. Le langage HTML a des éléments dédiés pour décrire les listes, ordonéées ou non.</p>
+<ul>
+<li>Listes ordonnées (ordered list: <code>ol</code>)</li>
+<li>Listes non ordonnées (unordered list: <code>ul</code>)</li>
+<li><p>Chaque élément de liste est un <em>list item (<code>li</code>)</em></p>
+<p>Exemple:</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>En HTML, il existe deux sortes de listes:
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Listes ordonnées<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Listes non ordonnées<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>Liens
+  Les liens sont une partie essentielle du Web. Pour ajouter un lien en HTML on utilise l&apos;élément <code>&lt;a&gt;</code>.</p>
+<pre><code class="lang-html">      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Visitez mon <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://facebook.com/moustaphaotf&quot;</span>&gt;</span>profile Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../01-web-essentials/" class="navigation navigation-prev " aria-label="Previous page: Web Essentials">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../03-css/" class="navigation navigation-next " aria-label="Next page: CSS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.3","depth":1,"next":{"title":"CSS","level":"1.4","depth":1,"path":"chapters/03-css/README.md","ref":"./chapters/03-css/README.md","articles":[]},"previous":{"title":"Web Essentials","level":"1.2","depth":1,"path":"chapters/01-web-essentials/README.md","ref":"./chapters/01-web-essentials/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"./cours","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapters/02-html/README.md","mtime":"2024-05-13T00:19:58.448Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-05-24T03:06:42.334Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
